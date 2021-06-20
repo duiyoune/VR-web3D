@@ -31,8 +31,8 @@ function movePlayerTo(position_index) {
  * If desktop, use arrow or WASD keys. If mobile, use camera's rotation.
  **/
 function setupControls() {
-  // return mobileCheck() ? setupMobileControls() : setupDesktopControls();
-  setupMobileControls();
+   return mobileCheck() ? setupMobileControls() : setupDesktopControls();
+  //setupMobileControls();
 }
 
 function setupDesktopControls() {
