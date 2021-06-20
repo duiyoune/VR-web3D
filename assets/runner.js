@@ -31,7 +31,8 @@ function movePlayerTo(position_index) {
  * If desktop, use arrow or WASD keys. If mobile, use camera's rotation.
  **/
 function setupControls() {
-  return mobileCheck() ? setupMobileControls() : setupDesktopControls();
+  // return mobileCheck() ? setupMobileControls() : setupDesktopControls();
+  setupMobileControls();
 }
 
 function setupDesktopControls() {
@@ -56,8 +57,8 @@ function setupMobileControls() {
   document.addEventListener('touchend', function (event) {
     startGame();
 }, false);
-document.addEventListener("deviceorientation", function(event) {
-
+window.addEventListener("deviceorientation", function(event) {
+  alert(event.alpha);
   if(event.alpha>45 &&event.alpha<180) movePlayerTo(0);
   else if(event.alpha>315) movePlayerTo(2);
   else  movePlayerTo(1);
