@@ -53,7 +53,9 @@ function setupDesktopControls() {
 }
 
 function setupMobileControls() {
-  startGame();
+  document.addEventListener('touchend', function (event) {
+    startGame();
+}, false);
   AFRAME.registerComponent('lane-controls', {
     tick: function (time, timeDelta) {
       
