@@ -56,6 +56,16 @@ function setupMobileControls() {
   document.addEventListener('touchend', function (event) {
     startGame();
 }, false);
+document.addEventListener("deviceorientation", function(event) {
+
+  if(event.alpha>45 &&event.alpha<180) movePlayerTo(0);
+  else if(event.alpha>315) movePlayerTo(2);
+  else  movePlayerTo(1);
+  // 处理event.acceleration、event.accelerationIncludingGravity、
+
+  // event.rotationRate和event.interval
+
+}, true);
   AFRAME.registerComponent('lane-controls', {
     tick: function (time, timeDelta) {
       
