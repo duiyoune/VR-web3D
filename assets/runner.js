@@ -55,6 +55,7 @@ function setupDesktopControls() {
 function setupMobileControls() {
   AFRAME.registerComponent('lane-controls', {
     tick: function (time, timeDelta) {
+      startGame();
       var rotation = this.el.object3D.rotation;
 
       if      (rotation.y > 0.1)  movePlayerTo(0);
