@@ -140,9 +140,9 @@ function addTreesRandomly(
     }
   });
 
-  if (mobileCheck()) {
-    mirrorVR.notify('addTrees', position_indices);
-  }
+  // if (mobileCheck()) {
+  //   mirrorVR.notify('addTrees', position_indices);
+  // }
   return numberOfTreesAdded;
 }
 
@@ -212,9 +212,9 @@ function addScoreForTree(tree_id) {
 
 function updateScoreDisplay() {
   scoreDisplay.setAttribute('value', score);
-  if (mobileCheck()) {
-    mirrorVR.notify('score', score);
-  }
+  // if (mobileCheck()) {
+  //   mirrorVR.notify('score', score);
+  // }
 }
 
 /********
@@ -365,9 +365,9 @@ function gameOver() {
   teardownTrees();
   teardownScore();
 
-  if (mobileCheck()) {
-    mirrorVR.notify('gameOver', {});
-  }
+  // if (mobileCheck()) {
+  //   mirrorVR.notify('gameOver', {});
+  // }
 }
 
 function startGame() {
