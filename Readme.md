@@ -1,5 +1,5 @@
-## Readme
+# VR-web3D
 
-# how to start?
-run in your console:
-``` npm install -g live-server && live-server
+## HOW TO START
+RUN IN YOUR CONSOLE:
+>  npm install -g live-server && live-server
