@@ -30,8 +30,8 @@
 
   
 
-      <a-entity position="0 2.25 -15" particle-system="preset: snow; particleCount: 10000"></a-entity>
-      <a-simple-sun-sky sun-position="-1 0.5 -1" light-color="black" dark-color="black" fog-color="gray">
+      <a-entity id ="particle" position="0 2.25 -15" particle-system="preset: snow; particleCount: 7000"></a-entity>
+      <a-simple-sun-sky id="thesky" sun-position="-1 0.5 -1" light-color="black" dark-color="black" fog-color="gray">
       </a-simple-sun-sky>
       <!-- Mixins -->
       <a-assets>
@@ -146,9 +146,7 @@
 
           <a-entity id="menu-container">
             <a-entity id="start-menu" position="0 1.2 -3">
-              <a-text id="start-copy-desktop" value="You flew to a planet filled with snow..." mixin="copy" position="0 2.0 0"></a-text>
-              <a-text id="start-copy-desktop" value="Get out of here! Watch out for ice-trees!" mixin="copy" position="0 1.6 0"></a-text>
-              <a-text id="start-copy-desktop" value="Hit any key to start!" mixin="copy" position="0 1.2 0"></a-text>
+              <a-text id="start-copy-desktop" value="You flew to a planet filled with snow...\n Get out of here! Watch out for ice-trees!\nHit any key to start" mixin="copy" position="0 2.0 0"></a-text>
               <a-entity id="start-copy-mobile" position="0 1 0">
                 <a-text value="Turn left and right to move your player, and avoid the trees!" mixin="copy"></a-text>
                 <a-text value="Start" position="0 0.75 0" mixin="heading"></a-text>

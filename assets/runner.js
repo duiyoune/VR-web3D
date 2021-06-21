@@ -218,11 +218,60 @@ function teardownScore() {
 
 function addScoreForTree(tree_id) {
   score += 1;
-  countedTrees.add(tree_id);
+  countedTrees.add(tree_id)
 }
 
 function updateScoreDisplay() {
   scoreDisplay.setAttribute('value', score);
+  if(score==0){
+    var sky = document.getElementById("thesky");
+    thesky.setAttribute('light-color','black');
+    thesky.setAttribute('dark-color','black');
+    thesky.setAttribute('fog-color','gray');
+    var par = document.getElementById('particle');
+    par.setAttribute('particle-system','preset: snow;particleCount: 10000');
+
+  }
+  if(score==20){
+    var sky = document.getElementById("thesky");
+    thesky.setAttribute('light-color','gray');
+    thesky.setAttribute('dark-color','gray');
+    thesky.setAttribute('fog-color','white');
+  }
+
+  if(score==40){
+    var sky = document.getElementById("thesky");
+    thesky.setAttribute('light-color','orange');
+    thesky.setAttribute('dark-color','orange');
+    thesky.setAttribute('fog-color','white');
+  }
+
+  if(score==60){
+    var sky = document.getElementById("thesky");
+    thesky.setAttribute('light-color','seagreen');
+    thesky.setAttribute('dark-color','seagreen');
+    thesky.setAttribute('fog-color','skyblue');
+    var par = document.getElementById('particle');
+    par.setAttribute('particle-system','preset: dust;particleCount: 7000');
+  }
+
+  if(score>80){
+    var sky = document.getElementById("thesky");
+    thesky.setAttribute('light-color','blue');
+    thesky.setAttribute('dark-color','blue');
+    thesky.setAttribute('fog-color','skyblue');
+
+  }
+
+  if(score>120){
+    var sky = document.getElementById("thesky");
+    thesky.setAttribute('light-color','red');
+    thesky.setAttribute('dark-color','red');
+    thesky.setAttribute('fog-color','orange');
+    var par = document.getElementById('particle');
+    par.setAttribute('particle-system','preset: dust;particleCount: 7000');
+
+  }
   // if (mobileCheck()) {
   //   mirrorVR.notify('score', score);
   // }
