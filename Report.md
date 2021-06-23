@@ -122,12 +122,28 @@ AFrame支持主流VR头显如Vive, Rift, Daydream, GearVR,Cardboard, 甚至可�
 
   <img src="/Users/chenzijie/Library/Application Support/typora-user-images/image-20210618145627946.png" alt="image-20210618145627946" style="zoom:50%;" />
 
+### 游戏运行方式
+
+游戏已经部署到github pages上，可以使用手机浏览器或者PC浏览器直接访问https://duiyoune.github.io/VR-web3D.github.io进行体验（不推荐使用safari)。
+
 ### 游戏场景截图
 
-![截屏2021-06-20 下午11.14.47](./image/1.png)
+<img src="image/1.png" style="zoom:50%" />
 
+<img src="image/2.png" style="zoom:50%" />
 
+<img src="image/3.png" style="zoom:50%" />
 
-![截屏2021-06-20 下午11.20.04](./image/2.png)
+<img src="image/4.png" style="zoom:50%" />
 
-![截屏2021-06-20 下午11.20.04](./image/.png)
+<img src="image/5.png" style="zoom:50%" />
+
+<img src="image/6.png" style="zoom:50%" />
+
+<img src="image/7.png" style="zoom:50%" />
+
+### 手机端适配
+
+<img src="image/8.png" style="zoom:25%" />
+
+<img src="image/9.png" style="zoom:25%" />
